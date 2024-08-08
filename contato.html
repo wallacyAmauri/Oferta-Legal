@@ -1,0 +1,244 @@
+@extends('layout.main')
+@section('title','oferta legal')
+@push('styles')
+    <!---- <link rel="stylesheet" href="./css/styles1.css"> ---->
+@endpush
+@push('scripts')
+<script src="./js/animationContatos.js"></script>
+@endpush
+@section('main')
+
+    <nav class="nav" style="top: 0;">
+        <div class="container nav_container">
+        <img src="./img/logo2.png" alt="" style="width:140px;">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="/compra" class="nav_link">Compra</a></li>
+            <li class="nav_item"><a href="/blog" class="nav_link ">blog</a></li>
+            <li class="nav_item"><a href="/sobre" class="nav_link">Sobre</a></li>
+            <li class="nav_item"><a href="/contato" class="nav_link active">Contato</a></li>
+            <!-- <li class="nav_item">
+              <a href="/sign-up.html" class="nav_link">Sign up</a>
+            </li> -->
+          </ul>
+          <div class="nav_items">
+            <form action="#" class="nav_form">
+              <input
+                type="text"
+                class="nav_input"
+                placeholder="search here...." />
+              <img src="./image/search.png" alt="" class="nav_search" />
+            </form>
+            <img src="./image/heart.png" alt="" class="nav_heart" />
+            <a href="/cart.html">
+              <img src="./image/cart.png" alt="" class="nav_cart" />
+            </a>
+          </div>
+          <span class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </span>
+        </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+    <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/compra" class="mobile_nav_link">Compra</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/blog" class="mobile_nav_link">blog</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sobre" class="mobile_nav_link">Sobre</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/contato" class="mobile_nav_link">Contato</a>
+        </li>
+    </ul>
+    </nav>
+<section id="page_header" class="about-contato">
+     <!--<img src="./img/b1.jpg" alt=""> -->
+    <h2>#Contato</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, enim perspiciatis iure fuga?</p>
+</section>
+           
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="contact-info">
+           <h3 class="sub-heading">Fale conosco</h3>
+           <h1 class="heading">agora mesmo</h1>
+           <p class="text">
+               Sed et sodales mi. Nullam feugiat mi in mi gravida iaculis. 
+               Vestibulum ornare rhoncus sapien quis elementum. Aenean egestas,
+               arcu nec malesuada posuere, lectus urna accumsan elit
+           </p>
+           <a href="contato@ivici.com.br" class="mail">contato@ivici.com.br<i class="uil 
+           uil-arrow-right"></i></a>
+       </div>
+       
+       <form action="index.html" class="contact-form">
+           <h3>mande sua mensagem</h3>
+           <input type="text" class="form-input" placeholder="Your Name" 
+           required>
+           <input type="email" class="form-input" placeholder="Your Email" 
+           required>
+           <textarea placeholder="Project Details" class="form-input"
+           required></textarea>
+           <input type="submit" value="Send" class="btn">
+       </form>
+    </div>
+</section>
+
+<section class="testimoials" id="animation-testimoials" style="background:var(--colo-dark-1);">
+    <div class="container">
+        <div class="section-header">
+        <div class="about-text">
+                <h1>Opinião dos Clientes</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique debitis dicta et numquam magnam, odio officia quibusdam deserunt?
+                    Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        <div class="testimoials-content">
+            <div class="swiper testimoials-slider testimoials-slider-swiper-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Amauri wallacy</h3>
+                                <span class="job">desenvolvedor Front-End</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Wallacy Amauri</h3>
+                                <span class="job">desenvolvedor Front</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Kauã Carlos</h3>
+                                <span class="job">desenvolvedor Back-End</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Mateus Guilherme</h3>
+                                <span class="job">desenvolvedor Back-End</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Wallacy </h3>
+                                <span class="job">desenvolvedor</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimoials-item">
+                        <div class="info">
+                            <img src="./img/testemunha/wallacy.jpeg" alt="">
+                            <div class="info-box">
+                                <h3 class="name">Amauri</h3>
+                                <span class="job">Front-End</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Possimus nam maxime ex sequi ducimus, 
+                            facilis dolorem quasi amet officiis molestiae?
+                        </p>
+                        <div class="rating">
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                            <img src="./img/svg/opiniaoCheck.svg" alt="" class="w-6" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination js-testimoials-pagination"></div>
+        </div>
+    </div>
+</section>
+
+@endsection
